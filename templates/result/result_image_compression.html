@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Compression Result</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- <h1>Image Compression Result</h1>
+
+    <h2>Original Image:</h2>
+    <img src="{{ original_image_path }}" alt="Original Image" />
+    <p>{{file_size_before}} kb</p>
+
+    <h2>Compressed Image:</h2>
+    <img src="{{ compressed_image_path }}" alt="Compressed Image" />
+    <p>{{file_size_after}} kb</p>
+
+    <a
+      href="{{ url_for('download', filename=compressed_image_path.split('/')[-1]) }}"
+      >Download compressed image</a
+    > -->
+    <div class="bg-danger bg-gradient" style="height: 99vh">
+      <h1 class="text-center text-white mb-5 pt-5">
+        Image Compression - Result
+      </h1>
+
+      <!-- Result Table -->
+      <div class="table bg-white mt-5 p-4 rounded shadow-lg container">
+        <div>
+          <div class="d-flex justify-content-center gap-5">
+            <!-- Before Image Start -->
+            <div class="card" style="width: 18rem">
+              <img
+                src="{{original_image_path}}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  Before Compression - {{file_size_before}}kb
+                </h5>
+              </div>
+            </div>
+            <!-- Before Image End -->
+            <!-- After Image Start -->
+            <div class="card" style="width: 18rem">
+              <img
+                src="{{compressed_image_path}}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  After Compression - {{file_size_after}}kb
+                </h5>
+              </div>
+            </div>
+            <!-- After Image End -->
+          </div>
+          <div class="d-flex justify-content-center gap-5 mt-4">
+            <a href="/image-compression" class="btn btn-dark bg-dark w-50"
+              >Back</a
+            >
+            <!-- <a href="#" class="btn btn-primary bg-primary w-50">Download</a> -->
+            <a
+              class="btn btn-primary bg-primary w-50"
+              href="{{ url_for('download', filename=compressed_image_path.split('/')[-1]) }}"
+              download
+              >Download Gambar</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
