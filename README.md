@@ -3,6 +3,11 @@
 Nama  : Gaduh Hartawan <br>
 NIM   : 1207050042
 
+### `Cara clone atau install aplikasi`
+1. Clone Repository
+2. Jalankan `pip install requirements.txt`
+3. Aplikasi sudah dapat digunakan
+
 ### `Running Web App`
 Link untuk menjalankan Web:\
 [https://gaduhhartawan.pythonanywhere.com/](https://gaduhhartawan.pythonanywhere.com/).
